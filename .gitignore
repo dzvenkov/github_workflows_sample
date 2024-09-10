@@ -1,0 +1,4 @@
+﻿.vs
+GithubWorkflowSample/SampleNuGetPackage/bin
+obj
+GithubWorkflowSample/SampleNUnitTest/bin
