@@ -18,10 +18,13 @@ jobs:
         dotnet-version: '8.0.x'  # Set this to your .NET SDK version
 
     - name: Restore dependencies
+      working-directory: ./GithubWorkflowSample
       run: dotnet restore
 
     - name: Build
+      working-directory: ./GithubWorkflowSample
       run: dotnet build --no-restore
 
     - name: Test
+      working-directory: ./GithubWorkflowSample
       run: dotnet test --no-build
